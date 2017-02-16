@@ -27,7 +27,6 @@ programming and design effort---and scale horizontally to a large
 number of nodes.
 
 
-
 {::options parse_block_html="true" /}
 <div class="text-center" style="padding:10px;">
   ![dab study](images/arch.png){:.image-responsive .center-block width="60%"}
