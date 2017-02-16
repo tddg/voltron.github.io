@@ -30,7 +30,7 @@ number of nodes.
 
 {::options parse_block_html="true" /}
 <div class="text-center" style="padding:10px;">
-  ![dab study](/images/arch.png){:.image-responsive .center-block width="60%"}
+  ![dab study](images/arch.png){:.image-responsive .center-block width="60%"}
   **Voltron logical (a) and physical (b) architecture.**
 </div>
 
