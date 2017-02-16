@@ -3,44 +3,45 @@ layout: default
 ---
 ## Overview
 
-  The strong growth of mobile computing has led to an explosion of mobile apps.
-  The problem is that many mobile apps are not well written and misbehave
-  when installed on end users' smartphone.
+The growing disparity in data storage and retrieval needs of modern
+applications is driving the proliferation of a wide variety of
+Distributed Object-Based Stores (DOBS). However, the complexities in
+implementing DOBS and adapting ever-changing storage requirements
+present unique opportunities and engineering challenges.
 
-  DefDroid aims to address a rising class of issues in mobile apps in which some
-  app acts aggressively to its hosting ecosystem (e.g., keep searching GPS,
-  wake up the device frequently, frequently download large data via cellular
-  network). We call these issues **Disruptive App Behavior** (DAB). 
-  Table 1 below shows some common disruptive app behavior that we have examined
-  in a study of more than 9,000 mobile user posts and reports. (If you encounter 
-  some of them or new kinds of app issues in your smartphone, we'd be happy to 
-  [hear from you](/feedback.html).
+This paper presents Voltron, a modular and compositional development
+platform that eases DOBS programming. Voltron is based on the insight
+that DOBS shares common distributed management functionalities (e.g.,
+replication, consistency, and topology), and thus their development
+can be modularized and reused for building other/new stores. Voltron
+takes a single-server data store implementation (called datalet), and
+seamlessly enable DOBS services atop the datalets by leveraging
+pre-built control modules (called controlet). The resulting DOBS can
+be easily extended for new types of services. We demonstrate how
+Voltron can enable a wide variety of DOBS services with minimal
+engineering efforts. Furthermore, we deploy distributed KV stores
+developed by Voltron in a local testbed and a public cloud, and show
+that the KV stores perform comparable and sometimes better than
+state-of-the-art systems---that require significantly higher
+programming and design effort---and scale horizontally to a large
+number of nodes.
 
-  Disruptive app behavior is annoying to users because it affects not
-  only the app itself (e.g., compared to normal app defects that cause
-  crash or unresponsive) but also hurts user experiences for the other 
-  apps on the same device due to battery drain, excessive usage of data 
-  plan, overusage of storage space, etc. 
 
-  DefDroid provides a system-level solution to address disruptive app
-  behavior by making the mobile OS more defensive so that even if some
-  apps have defects that can cause disruptive behavior, the OS will
-  actively intervene to adjust the app execution and minimize potential
-  negative impact to battery, data plan or storage.
 
 {::options parse_block_html="true" /}
 <div class="text-center" style="padding:10px;">
-  ![dab study](/images/disruptive.png){:.image-responsive .center-block width="60%"}
-  **Table 1: Common disruptive behavior we summarized from examining user posts/reports.**
+  ![dab study](/images/arch.png){:.image-responsive .center-block width="60%"}
+  **Voltron logical (a) and physical (b) architecture.**
 </div>
 
 ## People
 
 {:.table}
-| [Ryan Huang](http://cseweb.ucsd.edu/~peh003) | [Tianyin Xu](http://cseweb.ucsd.edu/~tixu) | [Xinxin Jin](http://cseweb.ucsd.edu/~x7jin) | [Yuanyuan Zhou](http://cseweb.ucsd.edu/~yyzhou) |
+| [Ali Anwar](http://people.cs.vt.edu/~ali/) | [Yue Cheng](http://people.cs.vt.edu/~yuec/) | [Hai Huang](http://researcher.watson.ibm.com/researcher/view.php?person=us-haih) | [Dongyoon Lee](http://people.cs.vt.edu/~dongyoon/) | [Ali R. Butt](http://people.cs.vt.edu/~butta/) |
 | ------------- | ------------- | ------------- | ------------- |
 |               |               |               |               |
 
 ## Contact
 
-#### ryanhuang AT cs.ucsd.edu
+#### ali AT vt.edu
+#### yuec AT vt.edu
