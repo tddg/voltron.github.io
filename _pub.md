@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-* {: .pubitem} **DefDroid: Towards a More Defensive Mobile OS Against Disruptive App Behavior**
+* {: .pubitem} **ClusterOn: Building highly configurable and reusable clustered data services using simple data nodes**
 
-  [Ryan Huang](http://cseweb.ucsd.edu/~peh003), [Tianyin Xu](http://cseweb.ucsd.edu/~tixu), [Xinxin Jin](http://cseweb.ucsd.edu/~x7jin), [Yuanyuan Zhou](http://cseweb.ucsd.edu/~yyzhou). To appear in *Proceedings of The 14th ACM International Conference on Mobile Systems,
-ations, and Services*(**[MobiSys '16](http://www.sigmobile.org/mobisys/2016)**), June 2016, Singapore
+  [Ryan Huang](http://cseweb.ucsd.edu/~peh003), [Tianyin Xu](http://cseweb.ucsd.edu/~tixu), [Xinxin Jin](http://cseweb.ucsd.edu/~x7jin), [Yuanyuan Zhou](http://cseweb.ucsd.edu/~yyzhou). To appear in *Proceedings of The 8th USENIX Workshop on Hot Topics in Storage and File Systems*(**[HotStorage '16](https://www.usenix.org/conference/hotstorage16)**), June 2016, Denver
 
-  [Paper](/pubs/defdroid-mobisys16.pdf)
+  [Paper](https://www.usenix.org/system/files/conference/hotstorage16/hotstorage16_anwar.pdf)
 
 {: .pubs}
